@@ -31,7 +31,7 @@ class Kmap{
 	string getS();
 	private:
 	vector<string> str;
-	int nWeight[5];//¼Æ¦rÅv­« 
+	int nWeight[5];//Â¼Ã†Â¦rÃ…vÂ­Â« 
 	int cnt_graph[16][2];
 	int cnt_1;
 	bool map[16];
@@ -186,7 +186,7 @@ int Kmap::logic()
 	}
 		
 	int k=0;
-	while(k <= 3){//¾î¦C8 
+	while(k <= 3){//Â¾Ã®Â¦C8 
 		t=true;
 		if(k==3)
 		{
@@ -240,7 +240,7 @@ int Kmap::logic()
 	}
 	
 	k=0;
-	while(k <= 3){//ª½¦C8 
+	while(k <= 3){//ÂªÂ½Â¦C8 
 		t=true;
 		if(k==3)
 		{
@@ -295,7 +295,7 @@ int Kmap::logic()
 	}
 	
 	k=0;	
-	while(k<=3)//®ø4­Ó 
+	while(k<=3)//Â®Ã¸4Â­Ã“ 
 	{
 		t=true;
 		if(k==3)
@@ -474,7 +474,6 @@ int Kmap::logic()
 					if(k==1) s[cnt]="bd";
 					if(k==2) {
 						s[cnt]="bc";
-						cout << icnt[3][1] << endl;
 					}
 					cnt++;
 				}
@@ -564,7 +563,7 @@ int Kmap::logic()
 	}	
 	
 	k=0;
-	while(k<=3)//2ª½ 
+	while(k<=3)//2ÂªÂ½ 
 	{
 		t=true;
 		for(int i=0;i<2;i++)
@@ -700,7 +699,7 @@ int Kmap::logic()
 	}
 	
 	k=0;
-	while(k<=3)//¾î2 
+	while(k<=3)//Â¾Ã®2 
 	{
 		t=true;
 		for(int i=k;i<(k+1);i++)
@@ -836,7 +835,7 @@ int Kmap::logic()
 		k++;				
 	}	
 	
-	for(int i=0;i<4;i++){//³æ1­Ó 
+	for(int i=0;i<4;i++){//Â³Ã¦1Â­Ã“ 
 		for(int j=0;j<4;j++){
 			if(graph[i][j]=='1'){
 				if(icnt[i][j]==0)
