@@ -17,6 +17,7 @@
 9.  string getS();//回傳答案 
 
 data member
+
 vector<string> str;//紀錄分解字串 
 
  int nWeight[5];//數字權重  
