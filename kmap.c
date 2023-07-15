@@ -15,7 +15,7 @@ char* prime_implicant[20];
 int prime_implicant_size;//rec prime_implicant's size
 char* essential_prime_implicant[20];
 int essential_implicant_size;//rec essential_prime_implicant's size
-int index_two,index_four,index_eight;
+int index_two,index_four,index_eight;//the number of the circles contain 2 blocks,and so on..
 void handle_binary(int num)
 {
     if(num==0)
