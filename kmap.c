@@ -241,11 +241,11 @@ int main()
             printf("\n");    
         }
         printf("prime implicant: ");
-        printf("1");
+        if(index_one>=1) printf("1");
         printf("\nessential prime implicant: ");
-        printf("1");
+        if(index_one>=1) printf("1");
         printf("\nF(A,B,C,D)=");
-        printf("1");
+        if(index_one>=1) printf("1");
     }
     else
     {
