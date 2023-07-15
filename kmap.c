@@ -78,16 +78,7 @@ int handle_blocks(int arr[][8],int rec_index[],int arr_size,int size)
     for(int i=0;i< index;i++)
         for(int j=0;j<size;j++)
             count[arr[rec_index[i]][j]]+=1;
-    for(int i=0;i<index;i++)//del invalid index
-    {
-        bool at_least_one_block_count_one=false;
-        for(int j=0;j<size;j++)
-            if(table[arr[rec_index[i]][j]]=='1' && count[arr[rec_index[i]][j]]==1)//at least one block hasn't been visited
-            {
-                at_least_one_block_count_one=true;
-                break;
-            }
-    } 
+            
     return index;
 }
 
@@ -161,9 +152,7 @@ void handle_single_blocks(int *num_one,int index_one)
             transalte_to_str(15,num_one[i],prime_implicant);//15="1111"
             transalte_to_str(15,num_one[i],essential_prime_implicant);
         }
-
    }
-
 }  
 void handle_translate(int* rec_2blocks_index,int two_blocks[][8],int *rec_4blocks_index,int four_blocks[][8],int *rec_8blocks_index,char eight_blocls_prime_implicant[][10],
 char **arr,int *arr_size) 
@@ -195,7 +184,6 @@ char **arr,int *arr_size)
         if(rec_8blocks_index[i] !=-1)//consider del blocks
            arr[(*arr_size)++]=eight_blocls_prime_implicant[rec_8blocks_index[i]];
     }
-
 }
 
 int main()
