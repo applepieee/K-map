@@ -175,7 +175,6 @@ char **arr,int *arr_size)
         {
             result=two_blocks[rec_2blocks_index[i]][0]^ two_blocks[rec_2blocks_index[i]][1];
             transalte_to_str(15-result,two_blocks[rec_2blocks_index[i]][1],arr);
-
         }
     }
 
@@ -297,8 +296,6 @@ int main()
 
         handle_single_blocks(num_one,index_one);//handle 1 block
     
-        
-
         //translate to string
         handle_translate( rec_2blocks_index,two_blocks,rec_4blocks_index,four_blocks,rec_8blocks_index, eight_blocls_prime_implicant,prime_implicant,&prime_implicant_size) ;
         for(int i=0;i< index_eight;i++)//del invaild eight blocks circle
@@ -310,7 +307,6 @@ int main()
                 {
                     if(table[eight_blocks[rec_8blocks_index[i]][j]]=='1' && count[eight_blocks[rec_8blocks_index[i]][j]]==1)
                     {
-                        //printf("11111");//t
                         at_least_one_block_count_one=true;break;
                     }
                 }
@@ -399,6 +395,5 @@ int main()
             if(i!=essential_implicant_size-1)
                 printf(" + ");
         }
-    }
-    
+    }  
 }
